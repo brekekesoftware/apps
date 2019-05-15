@@ -7,7 +7,7 @@ lint:
 deploy:
 	yarn build \
 	&& ssh apps.brekeke.com "rm -rf /var/www/apps/*" \
-	&& scp -r build/* apps.brekeke.com:/var/www/apps
+	&& scp -r build/. apps.brekeke.com:/var/www/apps
 
 js-import-sort:
 	make -s git EXT='js' \
