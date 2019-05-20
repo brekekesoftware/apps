@@ -12,6 +12,10 @@ class LastModified extends React.Component {
     window
       .fetch(this.props.url, {
         method: 'HEAD',
+        headers: new Headers({
+          Pragma: 'no-cache',
+          'Cache-Control': 'no-cache',
+        }),
       })
       .then(res => {
         const lm = res.headers.get('Last-Modified');
@@ -27,6 +31,9 @@ class LastModified extends React.Component {
             },
           );
         });
+      })
+      .catch(err => {
+        void err;
       });
   }
 
