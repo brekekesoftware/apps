@@ -11,25 +11,25 @@
   },
   "dependencies": {
     "history": "^4.9.0",
-    "humanize-duration": "^3.18.0",
-    "mobx": "^5.9.4",
-    "mobx-react": "^5.4.4",
+    "humanize-duration": "^3.20.0",
+    "mobx": "^5.13.0",
+    "mobx-react": "^6.1.1",
     "mobx-react-router": "^4.0.7",
     "normalize.css": "^8.0.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@craco/craco": "^5.1.0",
+    "@craco/craco": "^5.2.4",
     "circular-dependency-plugin": "^5.0.2",
     "js-import-sort": "^1.2.0",
     "node-sass": "^4.12.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "react-scripts": "^3.0.1"
   },
   "eslintConfig": {
