@@ -1,8 +1,9 @@
+import 'whatwg-fetch';
+
 import humanizeDuration from 'humanize-duration';
 import { observable, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import React from 'react';
-import 'whatwg-fetch';
 
 @observer
 class LastModified extends React.Component {

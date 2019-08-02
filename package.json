@@ -5,13 +5,12 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "lint": "eslint --ignore-path=.gitignore .",
-    "pret": "js-import-sort --silent=1 --path src/**/*.js && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,js,json,md}\"",
+    "pret": "eslint --ignore-path=.gitignore --fix . && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,json,md}\"",
     "deploy": "yarn build && ssh apps.brekeke.com \"rm -rf /var/www/apps/*\" && scp -r build/. apps.brekeke.com:/var/www/apps"
   },
-  "dependencies": {
+  "devDependencies": {
     "history": "^4.9.0",
-    "humanize-duration": "^3.20.0",
+    "humanize-duration": "^3.20.1",
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.1",
     "mobx-react-router": "^4.0.7",
@@ -22,18 +21,40 @@
     "react-router-dom": "^5.0.1",
     "whatwg-fetch": "^3.0.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
+  "optionalDependencies": {
     "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@craco/craco": "^5.2.4",
     "circular-dependency-plugin": "^5.0.2",
-    "js-import-sort": "^1.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-simple-import-sort": "^4.0.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "react-scripts": "^3.0.1"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "parser": "babel-eslint",
+    "plugins": [
+      "simple-import-sort",
+      "prettier",
+      "import"
+    ],
+    "rules": {
+      "sort-imports": "off",
+      "simple-import-sort/sort": "error",
+      "import/first": "error",
+      "import/newline-after-import": "error",
+      "import/no-duplicates": "error",
+      "import/no-extraneous-dependencies": "error",
+      "prettier/prettier": "error"
+    },
+    "settings": {
+      "react": {
+        "version": "latest"
+      }
+    }
   },
   "prettier": {
     "printWidth": 80,
