@@ -5,7 +5,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "pret": "eslint --ignore-path=.gitignore --fix . && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,json,md}\""
+    "pret": "eslint --ignore-path=.gitignore --fix . && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,json,md}\"",
+    "up": "ssh brekeke \"cd /var/www/apps && git pull && yarn && yarn build\";"
   },
   "devDependencies": {
     "history": "^4.10.1",
