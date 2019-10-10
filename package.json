@@ -9,29 +9,29 @@
     "deploy": "yarn build && ssh apps.brekeke.com \"rm -rf /var/www/apps/*\" && scp -r build/. apps.brekeke.com:/var/www/apps"
   },
   "devDependencies": {
-    "history": "^4.9.0",
-    "humanize-duration": "^3.20.1",
-    "mobx": "^5.13.0",
-    "mobx-react": "^6.1.1",
+    "history": "^4.10.1",
+    "humanize-duration": "^3.21.0",
+    "mobx": "^5.14.0",
+    "mobx-react": "^6.1.3",
     "mobx-react-router": "^4.0.7",
     "normalize.css": "^8.0.1",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "whatwg-fetch": "^3.0.0"
   },
   "optionalDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
-    "@craco/craco": "^5.2.4",
-    "circular-dependency-plugin": "^5.0.2",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@craco/craco": "^5.5.0",
+    "circular-dependency-plugin": "^5.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-simple-import-sort": "^4.0.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.2.0"
   },
   "eslintConfig": {
     "extends": "react-app",
