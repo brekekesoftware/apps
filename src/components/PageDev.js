@@ -12,9 +12,14 @@ const PageDev = () => (
       </span>
     </a>
     <br />
-    <a href="https://apps.brekeke.com/0/brekeke_phone.apk">
+    <a href="/0/brekeke_phone.apk">
       <span>
         Download for Android <LastModified url="/0/brekeke_phone.apk" />
+      </span>
+    </a>
+    <a href="/0/brekeke_phone_web.zip">
+      <span>
+        Download for Android <LastModified url="/0/brekeke_phone_web.zip" />
       </span>
     </a>
     <h3>Old UI v1:</h3>
@@ -24,7 +29,7 @@ const PageDev = () => (
       </span>
     </a>
     <br />
-    <a href="https://apps.brekeke.com/0/brekeke_phone_v1.apk">
+    <a href="/0/brekeke_phone_v1.apk">
       <span>
         Download for Android <LastModified url="/0/brekeke_phone_v1.apk" />
       </span>
