@@ -17,9 +17,10 @@ const PageDev = () => (
         Download for Android <LastModified url="/0/brekeke_phone.apk" />
       </span>
     </a>
+    <br />
     <a href="/0/brekeke_phone_web.zip">
       <span>
-        Download for Android <LastModified url="/0/brekeke_phone_web.zip" />
+        Web zip <LastModified url="/0/brekeke_phone_web.zip" />
       </span>
     </a>
     <h3>Old UI v1:</h3>
