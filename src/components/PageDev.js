@@ -30,7 +30,7 @@ const PageDev = () => (
       </span>
     </a>
     <br />
-    <a href="/0/brekeke_phonedev_web.zip">
+    <a href="/0/brekeke_phone.zip">
       <span>
         Web zip <LastModified url="/0/brekeke_phone.zip" />
       </span>
