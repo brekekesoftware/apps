@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import LastModified from '../shared/LastModified';
+import LastModified from '../shared/LastModified'
 
 const PageDev = () => (
   <React.Fragment>
@@ -36,6 +36,6 @@ const PageDev = () => (
       </span>
     </a>
   </React.Fragment>
-);
+)
 
-export default PageDev;
+export default PageDev

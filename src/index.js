@@ -1,18 +1,10 @@
-import './styles/main.scss';
+import './styles/main.css'
 
-import { configure } from 'mobx';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router } from 'react-router';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import App from './App';
-import history from './router/history';
+import Page404 from './components/Page404'
+import PageDev from './components/PageDev'
 
-configure({ enforceActions: 'always' });
-
-const app = (
-  <Router history={history}>
-    <App />
-  </Router>
-);
-ReactDOM.render(app, document.getElementById('root'));
+const app = window.location.pathname === '/dev' ? <PageDev /> : <Page404 />
+ReactDOM.render(app, document.getElementById('root'))

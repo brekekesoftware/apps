@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const Page404 = () => <h1>404 not found</h1>;
+const Page404 = () => <h1>404 not found</h1>
 
-export default Page404;
+export default Page404

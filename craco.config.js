@@ -1,4 +1,4 @@
-const CircularDependencyPlugin = require('circular-dependency-plugin');
+const CircularDependencyPlugin = require('circular-dependency-plugin')
 
 module.exports = {
   babel: {
@@ -16,4 +16,4 @@ module.exports = {
       }),
     ],
   },
-};
+}

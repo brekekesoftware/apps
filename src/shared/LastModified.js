@@ -1,13 +1,12 @@
-import 'whatwg-fetch';
+import 'whatwg-fetch'
 
-import humanizeDuration from 'humanize-duration';
-import { observable, runInAction } from 'mobx';
-import { observer } from 'mobx-react';
-import React from 'react';
+import humanizeDuration from 'humanize-duration'
+import React from 'react'
 
-@observer
 class LastModified extends React.Component {
-  @observable duration = null;
+  state = {
+    duration: ''
+  }
 
   componentDidMount() {
     window
@@ -19,27 +18,25 @@ class LastModified extends React.Component {
         }),
       })
       .then(res => {
-        const lm = res.headers.get('Last-Modified');
+        const lm = res.headers.get('Last-Modified')
         if (!lm) {
-          return;
+          return
         }
-        runInAction(() => {
-          this.duration = humanizeDuration(
-            Date.now() - new Date(lm).getTime(),
-            {
-              largest: 1,
-              round: true,
-            },
-          );
-        });
+        const d = Date.now() - new Date(lm).getTime()
+        const duration = humanizeDuration(d, {
+          largest: 1,
+          round: true,
+        })
+        this.setState({ duration })
       })
       .catch(err => {
-        void err;
-      });
+        void err
+      })
   }
 
   render() {
-    return this.duration && `(Updated ${this.duration} ago)`;
+    const { duration } = this.state
+    return duration && `(Updated ${duration} ago)`
   }
 }
-export default LastModified;
+export default LastModified

@@ -5,67 +5,30 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "pret": "eslint --ignore-path=.gitignore --fix . && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,json,md}\"",
-    "up": "ssh brekeke \"cd /var/www/apps && git pull && yarn && yarn build\";"
+    "format": "eslint --ignore-path=.gitignore --fix . && prettier --ignore-path=.gitignore --loglevel=silent --write \"**/*.{html,scss,json,md}\""
   },
   "dependencies": {
-    "history": "^4.10.1",
-    "humanize-duration": "^3.22.0",
-    "mobx": "^5.15.4",
-    "mobx-react": "^6.1.8",
-    "mobx-react-router": "^4.1.0",
-    "normalize.css": "^8.0.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "whatwg-fetch": "^3.0.0"
+    "humanize-duration": "3.25.1",
+    "normalize.css": "8.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router": "5.2.0",
+    "whatwg-fetch": "3.5.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.8.3",
-    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
-    "@craco/craco": "^5.6.4",
-    "circular-dependency-plugin": "^5.2.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-simple-import-sort": "^5.0.2",
-    "node-sass": "^4.13.1",
-    "prettier": "^2.0.2",
-    "react-scripts": "^3.4.1"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "parser": "babel-eslint",
-    "plugins": [
-      "simple-import-sort",
-      "prettier",
-      "import"
-    ],
-    "rules": {
-      "sort-imports": "off",
-      "simple-import-sort/sort": "error",
-      "import/first": "error",
-      "import/newline-after-import": "error",
-      "import/no-duplicates": "error",
-      "import/no-extraneous-dependencies": "error",
-      "prettier/prettier": "error"
-    },
-    "settings": {
-      "react": {
-        "version": "latest"
-      }
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "arrowParens": "avoid"
+    "@babel/core": "7.12.10",
+    "@babel/plugin-proposal-decorators": "7.12.12",
+    "@babel/plugin-proposal-optional-chaining": "7.12.7",
+    "@craco/craco": "5.9.0",
+    "circular-dependency-plugin": "5.2.2",
+    "eslint": "6.x",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.2.1",
+    "react-scripts": "3.4.4",
+    "typescript": "4.1.3",
+    "webpack": "4.42.0"
   },
   "browserslist": [
     ">0.2%",
