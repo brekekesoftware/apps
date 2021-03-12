@@ -5,36 +5,49 @@ import LastModified from '../shared/LastModified'
 const PageDev = () => (
   <React.Fragment>
     <h3>Brekeke Phone Dev</h3>
-    <a href="itms-services://?action=download-manifest&url=https://apps.brekeke.com/0/brekeke_phonedev.plist">
+    <a href='itms-services://?action=download-manifest&url=https://apps.brekeke.com/0/brekeke_phonedev.plist'>
       <span>
-        Install on iOS <LastModified url="/0/brekeke_phonedev.ipa" />
+        Install on iOS <LastModified url='/0/brekeke_phonedev.ipa' />
       </span>
     </a>
     <br />
-    <a href="/0/brekeke_phonedev.apk">
+    <a href='/0/brekeke_phonedev.apk'>
       <span>
-        Download for Android <LastModified url="/0/brekeke_phonedev.apk" />
+        Download for Android <LastModified url='/0/brekeke_phonedev.apk' />
       </span>
     </a>
     <br />
     <h3>Brekeke Phone</h3>
-    <a href="itms-services://?action=download-manifest&url=https://apps.brekeke.com/0/brekeke_phone.plist">
+    <a href='itms-services://?action=download-manifest&url=https://apps.brekeke.com/0/brekeke_phone.plist'>
       <span>
-        Install on iOS <LastModified url="/0/brekeke_phone.ipa" />
+        Install on iOS <LastModified url='/0/brekeke_phone.ipa' />
       </span>
     </a>
     <br />
-    <a href="/0/brekeke_phone.apk">
+    <a href='/0/brekeke_phone.apk'>
       <span>
-        Download for Android <LastModified url="/0/brekeke_phone.apk" />
+        Download for Android <LastModified url='/0/brekeke_phone.apk' />
       </span>
     </a>
     <br />
-    <a href="/0/brekeke_phone.zip">
+    <a href='/0/brekeke_phone.zip'>
       <span>
-        Web zip <LastModified url="/0/brekeke_phone.zip" />
+        Web zip <LastModified url='/0/brekeke_phone.zip' />
       </span>
     </a>
+    <h3>Brekeke Phone Dev2</h3>
+    <a href='itms-services://?action=download-manifest&url=https://apps.brekeke.com/0/brekeke_phonedev2.plist'>
+      <span>
+        Install on iOS <LastModified url='/0/brekeke_phonedev2.ipa' />
+      </span>
+    </a>
+    <br />
+    <a href='/0/brekeke_phonedev2.apk'>
+      <span>
+        Download for Android <LastModified url='/0/brekeke_phonedev2.apk' />
+      </span>
+    </a>
+    <br />
   </React.Fragment>
 )
 

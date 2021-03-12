@@ -5,7 +5,7 @@ import React from 'react'
 
 class LastModified extends React.Component {
   state = {
-    duration: ''
+    duration: '',
   }
 
   componentDidMount() {
